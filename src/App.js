@@ -1,4 +1,4 @@
-// src/App.js
+ // src/App.js
 import React from "react";
 import {
   AppBar,
@@ -10,7 +10,6 @@ import {
   Link,
   Box,
 } from "@mui/material";
-import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import FormatListBulletedOutlinedIcon from "@mui/icons-material/FormatListBulletedOutlined";
 import StoreIcon from "@mui/icons-material/Store";
 import BallotOutlinedIcon from "@mui/icons-material/BallotOutlined";
@@ -28,15 +27,16 @@ const statusLabels = [
   "Não Realizadas",
 ];
 
+
 function App() {
   return (
     <Container
       style={{
         padding: 0,
         margin: 0,
-        width: "100%",
-        maxWidth: "100vw",
-        backgroundColor: "rgb(237, 235, 235)",
+        width: '100%',
+        maxWidth: '100vw',
+        backgroundColor: 'rgb(237, 235, 235)',
       }}
     >
       <AppBar
@@ -53,7 +53,12 @@ function App() {
             <Grid item>
               <Typography
                 variant="h6"
-                style={{ fontSize: "1rem", marginRight: "8px" }}
+                style={{
+                  fontSize: "1rem",
+                  marginRight: "8px",
+                  fontFamily: "sans-serif", // Adiciona a fonte Sans Serif
+                  fontWeight: "bold", // Torna o texto mais grosso
+                }}
               >
                 Painel de Recebimento
               </Typography>
@@ -64,7 +69,12 @@ function App() {
             <Grid item>
               <Typography
                 variant="subtitle1"
-                style={{ fontSize: "1rem", margin: "0 8px" }}
+                style={{
+                  fontSize: "1rem",
+                  margin: "0 8px",
+                  fontFamily: "sans-serif", // Adiciona a fonte Sans Serif
+                  fontWeight: "bold", // Torna o texto mais grosso
+                }}
               >
                 Local: Centro de Distribuição
               </Typography>
@@ -75,7 +85,12 @@ function App() {
             <Grid item>
               <Typography
                 variant="subtitle1"
-                style={{ fontSize: "1rem", marginLeft: "8px" }}
+                style={{
+                  fontSize: "1rem",
+                  marginLeft: "8px",
+                  fontFamily: "sans-serif", // Adiciona a fonte Sans Serif
+                  fontWeight: "bold", // Torna o texto mais grosso
+                }}
               >
                 Dia: 24/06/2022
               </Typography>
@@ -131,7 +146,13 @@ function App() {
             </IconButton>
             <Typography
               variant="subtitle1"
-              style={{ fontSize: "1rem", color: "blue" }}
+              style={{
+                fontSize: "0.9rem", // Reduz o tamanho da palavra
+                color: "#0395d5", // Azul tonalidade primária
+                fontWeight: "bold", // Texto mais grosso
+                textDecoration: "none", // Remove o sublinhado
+                cursor: "pointer", // Altera o cursor ao pairar sobre o link
+              }}
             >
               CONFIGURAÇÕES
             </Typography>

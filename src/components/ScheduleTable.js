@@ -107,9 +107,9 @@ const ScheduleTable = () => {
   return (
     <TableContainer
       component={Paper}
-      style={{ left: 0, width: "50%", height: "50%" }}
+      style={{ left: 0, width: '50%', height: '50%' }}
     >
-      <Table style={{ borderCollapse: "collapse" }}>
+      <Table style={{ borderCollapse: 'collapse', borderColor: 'gray' }}>
         <thead>
           <tr>
             {docks.map((dock, index) => (

@@ -7,7 +7,7 @@ const StatusBox = ({ label }) => {
 
   return (
     <Box
-      borderRadius={2}
+      borderRadius={1}
       p={2}
       textAlign="left"
       position="relative"
@@ -26,7 +26,7 @@ const StatusBox = ({ label }) => {
       <Table>
         <TableBody>
           <TableRow>
-            <TableCell style={{ padding: 0, border: 'none' }}>
+            <TableCell style={{ padding: 0, border: 'none', fontWeight: 'bold' }}>
               {label}
             </TableCell>
           </TableRow>
