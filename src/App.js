@@ -10,15 +10,12 @@ import {
   Link,
   Box,
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-import StorageIcon from "@mui/icons-material/Storage";
-import EventIcon from "@mui/icons-material/Event";
+import FormatListBulletedOutlinedIcon from "@mui/icons-material/FormatListBulletedOutlined";
+import StoreIcon from "@mui/icons-material/Store";
+import BallotOutlinedIcon from "@mui/icons-material/BallotOutlined";
+import DateRangeIcon from "@mui/icons-material/DateRange";
 import SettingsIcon from "@mui/icons-material/Settings";
-import HomeIcon from "@mui/icons-material/Home";
-
-import AgendaGrid from "./components/AgendaGrid";
-import HorariosXDocas from "./components/HorariosXDocas";
 import StatusBox from "./components/StatusBox";
 import ScheduleTable from "./components/ScheduleTable";
 
@@ -84,17 +81,45 @@ function App() {
               </Typography>
             </Grid>
           </Grid>
+          <IconButton
+            color="inherit"
+            style={{
+              border: "1px solid rgba(0, 0, 0, 0.5)", // Borda cinza
+              width: "40px", // Largura quadrada
+              height: "40px", // Altura quadrada
+              borderRadius: "5px", // Bordas arredondadas (opcional)
+            }}
+          >
+            <FormatListBulletedOutlinedIcon
+              style={{
+                color: "rgba(0, 0, 0, 0.7)", // Torna o ícone mais cinza
+              }}
+            />
+          </IconButton>
+
+          <IconButton
+            color="inherit"
+            style={{
+              backgroundColor: "rgba(0, 0, 0, 0.2)", // Fundo escuro
+              width: "40px", // Largura quadrada
+              height: "40px", // Altura quadrada
+              borderRadius: "5px", // Bordas arredondadas (opcional)
+            }}
+          >
+            <BallotOutlinedIcon
+              style={{
+                fontSize: "24px", // Tamanho do ícone
+                color: "white", // Cor do ícone (branco)
+                filter: "brightness(0.5)", // Diminui o brilho para torná-lo cinza
+              }}
+            />
+          </IconButton>
+
           <IconButton color="inherit">
-            <CalendarTodayIcon />
+            <DateRangeIcon />
           </IconButton>
           <IconButton color="inherit">
-            <StorageIcon />
-          </IconButton>
-          <IconButton color="inherit">
-            <HomeIcon />
-          </IconButton>
-          <IconButton color="inherit">
-            <EventIcon />
+            <StoreIcon />
           </IconButton>
           <Link
             href="#"
